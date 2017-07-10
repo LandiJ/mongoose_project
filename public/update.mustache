@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    {{#update}}<form action="/update/{{id}}" method="post">
+        <label for="">What color is the doll's hair?</label>
+        <input type="text" name="haircolor" value={{hair.color}}><br>
+        <label for="">Is your doll's hair curly or straight?</label>
+        <input type="text" name="hairtexture" value={{hair.texture}}><br>
+        <label for="">How much did this doll cost?</label>
+        <input type="text" name="cost" value={{cost}}>Dollars<br>
+        <label for="">Who owns this doll?</label>
+        <input type="text" name="owner" value={{owner}}><br>
+        <input type="submit" value="Update">
+
+    </form>{{/update}}
+   
+
+
+
+</body>
+
+</html>
